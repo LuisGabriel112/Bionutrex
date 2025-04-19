@@ -11,6 +11,45 @@
   <link rel="stylesheet" type="text/css" href="modules/slick/slick-1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="modules/slick/slick-1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .option-selector {
+      display: inline-flex;
+      border-radius: 9999px;
+      /* Pill shape */
+      overflow: hidden;
+      background-color: #f7f7f7;
+      /* Fondo claro */
+      border: 1px solid #d4d4d4;
+    }
+
+    .option-button {
+      flex-grow: 1;
+      padding: 0.75rem 1.5rem;
+      /* py-3 px-6 */
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      color: #374151;
+      /* text-gray-700 */
+      font-size: 1rem;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+
+    .option-button:hover {
+      background-color: #e5e7eb;
+      /* bg-gray-200 */
+    }
+
+    .option-button.active {
+      background-color: #d4d4d4;
+      /* bg-gray-300 */
+      color: #111827;
+      /* text-gray-900 */
+      font-weight: 600;
+      /* font-semibold */
+    }
+  </style>
 </head>
 
 <body class="bg-[#E5E5E5]">
@@ -21,50 +60,11 @@
     </div>
     <nav class="hidden | lg:flex">
       <ul class="font-sans flex text-lg [&>li]:gap-10 [&>li]:p-3 text-sm">
-        <li><a href="#home">Suplementos</a></li>
+        <li><a target="_blank" href="suplementos.html">Suplementos</a></li>
         <li><a href="#about">Bionutrex</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
-    <style>
-      .option-selector {
-        display: inline-flex;
-        border-radius: 9999px;
-        /* Pill shape */
-        overflow: hidden;
-        background-color: #f7f7f7;
-        /* Fondo claro */
-        border: 1px solid #d4d4d4;
-      }
-
-      .option-button {
-        flex-grow: 1;
-        padding: 0.75rem 1.5rem;
-        /* py-3 px-6 */
-        text-align: center;
-        cursor: pointer;
-        border: none;
-        background-color: transparent;
-        color: #374151;
-        /* text-gray-700 */
-        font-size: 1rem;
-        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-      }
-
-      .option-button:hover {
-        background-color: #e5e7eb;
-        /* bg-gray-200 */
-      }
-
-      .option-button.active {
-        background-color: #d4d4d4;
-        /* bg-gray-300 */
-        color: #111827;
-        /* text-gray-900 */
-        font-weight: 600;
-        /* font-semibold */
-      }
-    </style>
   </header>
   <!--Header end-->
 
@@ -518,7 +518,6 @@
   </script>
   <!--Shuffle JS here-->
   <script src="main.js"></script>
-  <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
 </body>
 
 </html>
