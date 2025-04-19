@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bionutrex</title>
+    <!--Tailwind here-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Slick here-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="modules/slick/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="modules/slick/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-[#E5E5E5]">
+    <!--Header start-->
+    <header class="flex justify-around items-center">
+      <div class="logo flex items-center p-3">
+        <img class="w-[100px]" src="img/logo.png" alt="" />
+      </div>
+      <nav class="hidden | lg:flex">
+        <ul class="font-sans flex text-lg [&>li]:gap-10 [&>li]:p-3 text-sm">
+          <li><a href="#home">Suplementos</a></li>
+          <li><a href="#about">Bionutrex</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <style>
+        .option-selector {
+            display: inline-flex;
+            border-radius: 9999px; /* Pill shape */
+            overflow: hidden;
+            background-color: #f7f7f7; /* Fondo claro */
+            border: 1px solid #d4d4d4;
+        }
+
+        .option-button {
+            flex-grow: 1;
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            color: #374151; /* text-gray-700 */
+            font-size: 1rem;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        .option-button:hover {
+            background-color: #e5e7eb; /* bg-gray-200 */
+        }
+
+        .option-button.active {
+            background-color: #d4d4d4; /* bg-gray-300 */
+            color: #111827; /* text-gray-900 */
+            font-weight: 600; /* font-semibold */
+        }
+    </style>
+    </header>
+    <!--Header end-->
+
+    <!--Banner start-->
+    <div
+      class="banner-title relative bg-[url('img/banner.jpg')] bg-cover bg-center h-[40vh] flex flex-col justify-center items-center mb-20"
+    >
+      <div class="h-full w-full absolute inset-0 bg-black opacity-50"></div>
+      <h1
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold text-center | lg:text-6xl"
+      >
+        BIONUTREX
+      </h1>
+    </div>
+    <!--Banner end-->
+
+    <!--Best sellers start-->
+    <div
+      class="carrousel-container text-center flex flex-col items-center justify-center text-4xl px-4 | lg:px-6 | xl:px-40 | 2xl:px-80"
+    >
+      <h2 class="mb-10 | lg:text-6xl">BEST SELLERS</h2>
+      <!--slick start-->
+      <div class="slick-container h-[350px] w-full">
+        <div
+          class="p-4 flex flex-col items-center text-center justify-center flex-shrink-0 mx-auto"
+        >
+          <img
+            src="img/slick-img/slick-img-1.jpg"
+            alt="Suplemento 1"
+            class="w-[200px] h-[200px] mb-3 object-cover mx-auto lg:w-[250px] lg:h-[250px] lg:mb-4"
+          />
+          <h3 class="text-sm text-[#0C0950] font-semibold mb-1 lg:text-lg">
+            AUMENTAR LA FUERZA
+          </h3>
+          <p class="text-sm mb-1 lg:text-base">Creatina</p>
+          <p class="text-sm lg:text-base">Descripción del producto</p>
+        </div>
+        <div
+          class="p-4 flex flex-col items-center text-center justify-center flex-shrink-0 mx-auto"
+        >
+          <img
+            src="img/slick-img/slick-img-1.jpg"
+            alt="Suplemento 1"
+            class="w-[200px] h-[200px] mb-3 object-cover mx-auto lg:w-[250px] lg:h-[250px] lg:mb-4"
+          />
+          <h3 class="text-sm text-[#0C0950] font-semibold mb-1 lg:text-lg">
+            AUMENTAR LA FUERZA
+          </h3>
+          <p class="text-sm mb-1 lg:text-base">Creatina</p>
+          <p class="text-sm lg:text-base">Descripción del producto</p>
+        </div>
+        <div
+          class="p-4 flex flex-col items-center text-center justify-center flex-shrink-0 mx-auto"
+        >
+          <img
+            src="img/slick-img/slick-img-1.jpg"
+            alt="Suplemento 1"
+            class="w-[200px] h-[200px] mb-3 object-cover mx-auto lg:w-[250px] lg:h-[250px] lg:mb-4"
+          />
+          <h3 class="text-sm text-[#0C0950] font-semibold mb-1 lg:text-lg">
+            AUMENTAR LA FUERZA
+          </h3>
+          <p class="text-sm mb-1 lg:text-base">Creatina</p>
+          <p class="text-sm lg:text-base">Descripción del producto</p>
+        </div>
+        <div
+          class="p-4 flex flex-col items-center text-center justify-center flex-shrink-0 mx-auto"
+        >
+          <img
+            src="img/slick-img/slick-img-1.jpg"
+            alt="Suplemento 1"
+            class="w-[200px] h-[200px] mb-3 object-cover mx-auto lg:w-[250px] lg:h-[250px] lg:mb-4"
+          />
+          <h3 class="text-sm text-[#0C0950] font-semibold mb-1 lg:text-lg">
+            AUMENTAR LA FUERZA
+          </h3>
+          <p class="text-sm mb-1 lg:text-base">Creatina</p>
+          <p class="text-sm lg:text-base">Descripción del producto</p>
+        </div>
+        <div
+          class="p-4 flex flex-col items-center text-center justify-center flex-shrink-0 mx-auto"
+        >
+          <img
+            src="img/slick-img/slick-img-1.jpg"
+            alt="Suplemento 1"
+            class="w-[200px] h-[200px] mb-3 object-cover mx-auto lg:w-[250px] lg:h-[250px] lg:mb-4"
+          />
+          <h3 class="text-sm text-[#0C0950] font-semibold mb-1 lg:text-lg">
+            AUMENTAR LA FUERZA
+          </h3>
+          <p class="text-sm mb-1 lg:text-base">Creatina</p>
+          <p class="text-sm lg:text-base">Descripción del producto</p>
+        </div>
+        <div
+          class="p-4 flex flex-col items-center text-center justify-center flex-shrink-0 mx-auto"
+        >
+          <img
+            src="img/slick-img/slick-img-1.jpg"
+            alt="Suplemento 1"
+            class="w-[200px] h-[200px] mb-3 object-cover mx-auto lg:w-[250px] lg:h-[250px] lg:mb-4"
+          />
+          <h3 class="text-sm text-[#0C0950] font-semibold mb-1 lg:text-lg">
+            AUMENTAR LA FUERZA
+          </h3>
+          <p class="text-sm mb-1 lg:text-base">Creatina</p>
+          <p class="text-sm lg:text-base">Descripción del producto</p>
+        </div>
+      </div>
+      <!--Slick end-->
+      <a
+        class="text-sm py-2 px-10 bg-black text-white mt-10 mb-10 transition hover:bg-[#0C0950] | lg:mt-20 | xl:mt-25 | 2xl-mt-30"
+        href="#"
+        >¿Donde comprar?</a
+      >
+    </div>
+    <!--Best sellers end-->
+
+    <!--sections start-->
+    <section
+      class="h-screen w-full flex flex-col justify-center items-center px-10 mb-20 | lg:flex-row"
+    >
+      <a href="#" class="relative h-full w-full my-2 | lg:mx-1 block">
+        <div
+          class="left relative h-full w-full bg-[url(img/section-left.jpg)] bg-center bg-cover"
+        >
+          <div class="h-full w-full absolute inset-0 bg-black opacity-50"></div>
+          <div class="content absolute text-white p-4">
+            <h3 class="font-bold text-2xl">POTENCIA TU RENDIMIENTO</h3>
+            <p class="text-white">Tu límite, superado.</p>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="relative h-full w-full my-2 | lg:mx-1 block">
+        <div
+          class="right relative h-full w-full bg-[url(img/section-right.jpg)] bg-center bg-cover"
+        >
+          <div class="h-full w-full absolute inset-0 bg-black opacity-50"></div>
+          <div class="content absolute text-white p-4">
+            <h3 class="font-bold text-2xl">DETRÁS DEL RENDIMIENTO</h3>
+            <p class="text-white">Calidad garantizada.</p>
+          </div>
+        </div>
+      </a>
+    </section>
+    <!--sections end-->
+
+    <!--menu start-->
+    <div
+      class="menu-container text-center flex flex-col items-center justify-center text-4xl">
+      <h3 class="pb-10">BUSCAR POR</h3>
+      <div class="filters button-group filter-button-group bg-gray-200 rounded-full p-2 mb-10 flex gap-3 justify-betwen items-center border border-black">
+        <button data-filter=".tipo" class="text-lg hover:bg-gray-300 rounded-full px-4 py-2 cursor-pointer">
+          Tipo
+        </button>
+        <button data-filter=".funcion" class="text-lg hover:bg-gray-300 rounded-full px-4 py-2 cursor-pointer">
+          Funcion
+        </button>
+        <button data-filter=".objetivo" class="text-lg hover:bg-gray-300 rounded-full px-4 py-2 cursor-pointer">
+          Objetivo
+        </button>
+        <button data-filter="*" class="text-lg hover:bg-gray-300 rounded-full px-4 py-2 cursor-pointer">
+          Todo
+        </button>
+      </div>
+    </div>
+
+      <div class="grid1 flex flex-row justify-betwen items-center gap-8 flex-wrap mt-25">
+        <div class="element-item tipo bg-white h-105 w-105 flex justify-center " data-category="tipo"><img class="h-70 w-90" src="img/bici.jpg" alt=""></div>
+        <div class="element-item tipo bg-white h-105 w-105 flex justify-center " data-category="tipo"><img class="h-70 w-90" src="img/bici.jpg" alt=""></div>
+<!--         <div class="element-item tipo bg-white h-105 w-105 flex justify-center relative" data-category="tipo"><img class="h-70 w-90 absolute bottom-65" src="img/bici.jpg" alt=""></div>
+        <div class="element-item tipo bg-white h-105 w-105 flex justify-center relative" data-category="tipo"><img class="h-70 w-90 absolute bottom-65" src="img/bici.jpg" alt=""></div>
+        <div class="element-item tipo bg-white h-105 w-105 flex justify-center relative" data-category="tipo"><img class="h-70 w-90 absolute bottom-65" src="img/bici.jpg" alt=""></div>
+        <div class="element-item tipo bg-white h-105 w-105 flex justify-center relative" data-category="tipo"><img class="h-70 w-90 absolute bottom-65" src="img/bici.jpg" alt=""></div>
+        <div class="element-item tipo bg-white h-105 w-105 flex justify-center relative" data-category="tipo"><img class="h-70 w-90 absolute bottom-65" src="img/bici.jpg" alt=""></div> -->
+        <div class="element-item funcion" data-category="funcion"></div>
+        <div class="element-item funcion" data-category="funcion"></div>
+        <div class="element-item funcion" data-category="funcion"></div>
+        <div class="element-item funcion" data-category="funcion"></div>
+        <div class="element-item funcion" data-category="funcion"></div>
+        <div class="element-item funcion" data-category="funcion"></div>
+        <div class="element-item objetivo" data-category="objetivo"></div>
+        <div class="element-item objetivo" data-category="objetivo"></div>
+        <div class="element-item objetivo" data-category="objetivo"></div>
+        <div class="element-item objetivo" data-category="objetivo"></div>
+        <div class="element-item objetivo" data-category="objetivo"></div>
+        <div class="element-item objetivo" data-category="objetivo"></div>
+      </div>
+    <!--Menu end-->
+
+    <div class="footer-container h-[20vh] w-full flex flex-col justify-center items-center bg-[#0C0950] text-white">
+      <div class="footer-content text-center">
+        <h3 class="text-2xl font-bold">BIONUTREX</h3>
+        <p class="text-sm">Tu aliado en el rendimiento.</p>
+        <p class="text-sm">© 2025 Bionutrex. Todos los derechos reservados.</p>
+      </div>
+
+    </div>
+    <!--Slick JS here-->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="modules/slick/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".slick-container").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        });
+      });
+    </script>
+
+<script>
+  const botonesFiltro = document.querySelectorAll('.filter-button-group button');
+  const claseSeleccionado = 'bg-gray-600 text-white transition'; // Definimos las clases de Tailwind para el estado seleccionado
+
+  botonesFiltro.forEach(boton => {
+    boton.addEventListener('click', function() {
+      botonesFiltro.forEach(btn => btn.classList.remove(...claseSeleccionado.split(' '))); // Removemos todas las clases
+      this.classList.add(...claseSeleccionado.split(' ')); // Agregamos las clases al botón clickeado
+    });
+  });
+</script>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  </body>
+</html>
